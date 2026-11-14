@@ -124,7 +124,7 @@
 .spread-spring .spring-sprig { position: absolute; height: auto; width: clamp(160px, 20vw, 270px); left: 50%; top: 40px; transform: translateX(-50%); opacity: .65; pointer-events: none; }
 .spread-foxrun { --gold: #ad6339; background: #f5edda; }
 .spread-foxrun .film-screen { background: #182b2e; border: 12px solid #233b41; outline: 1px solid #c6bca4; outline-offset: 7px; border-radius: 3px; }
-.spread-foxrun .film-screen video { object-fit: contain; image-rendering: pixelated; }
+.spread-foxrun .film-screen > img { display: block; width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
 .spread-foxrun .spread-title { letter-spacing: -.025em; }
 .spread-enlighten { --ink: #f0e6d0; --ink-soft: #c0c3b4; --ink-faint: #94a5a4; --gold: #d4b26d; --cream: #182e35; --night: #f0e6d0; color: var(--ink); background: #182e35; }
 .spread-enlighten .spread-kicker { color: #c2b48d; }
