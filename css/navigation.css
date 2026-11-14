@@ -1,3 +1,5 @@
+@import url("./chalk.css");
+
 /* Shared navigation for both languages and every portfolio page. */
 body .site-header.unified-header {
   height: 76px;
@@ -6,7 +8,8 @@ body .site-header.unified-header {
   border-bottom: 1px solid rgb(245 236 215 / .14);
 }
 body .site-header.unified-header .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   width: 100%;
   max-width: 1600px;
   height: 100%;
@@ -14,19 +17,31 @@ body .site-header.unified-header .container {
   justify-content: space-between;
   gap: 24px;
 }
+.unified-header .brand { grid-column: 1; grid-row: 1; justify-self: start; }
+body .unified-header .site-nav { grid-column: 2; grid-row: 1; margin: 0; justify-content: center; }
+.unified-header .header-actions {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Georgia, "Times New Roman", "WenKai", serif;
+}
 .unified-header .brand {
   color: #f5ecd7;
   gap: 12px;
-  font: italic 1.2rem Georgia, "Times New Roman", "WenKai", serif;
+  font: normal 1.2rem "Portfolio Chalk", "WenKai", sans-serif;
   letter-spacing: .06em;
   white-space: nowrap;
 }
 .unified-header .brand svg { width: 29px; height: 30px; flex: none; }
+body .unified-header .brand span { font-family: "Portfolio Chalk", "WenKai", sans-serif; font-style: normal; font-weight: 400; }
 body .unified-header .site-nav {
   gap: clamp(12px, 1.8vw, 28px);
   font-family: Georgia, "Times New Roman", "WenKai", serif;
 }
-body .unified-header .site-nav a {
+body .unified-header :is(.site-nav, .header-actions) a {
   position: relative;
   color: #f5ecd7;
   font-size: 1rem;
@@ -35,7 +50,7 @@ body .unified-header .site-nav a {
   min-height: 44px;
   border: 0;
 }
-body .unified-header .site-nav a::after {
+body .unified-header :is(.site-nav, .header-actions) a::after {
   content: "";
   position: absolute;
   inset: auto 0 4px;
@@ -44,12 +59,12 @@ body .unified-header .site-nav a::after {
   transform-origin: left;
   transition: transform .2s;
 }
-body .unified-header .site-nav a:hover::after,
-body .unified-header .site-nav a:focus-visible::after,
+body .unified-header :is(.site-nav, .header-actions) a:hover::after,
+body .unified-header :is(.site-nav, .header-actions) a:focus-visible::after,
 body .unified-header .site-nav a[aria-current]::after { transform: scaleX(1); }
 body .unified-header .site-nav a[aria-current] { color: #e9c887; }
-body .unified-header .site-nav a.lang-switch {
-  margin-left: 8px;
+body .unified-header .header-actions a.lang-switch {
+  margin-left: 0;
   border-radius: 0;
   font-size: .82rem;
   letter-spacing: .06em;
@@ -72,7 +87,12 @@ body .unified-header .site-nav a.lang-switch {
 .unified-header :focus-visible { outline: 2px solid #e9c887; outline-offset: 4px; }
 @media (max-width: 1000px) {
   body .site-header.unified-header { height: 70px; }
-  .js .site-menu-toggle { display: inline-flex; margin-left: auto; }
+  body .site-header.unified-header .container { grid-template-columns: 1fr auto auto; gap: 10px; }
+  .js .site-menu-toggle { display: inline-flex; grid-column: 2; grid-row: 1; }
+  .unified-header .header-actions { gap: 10px; }
+  .unified-header .header-actions .theme-toggle { width: 34px; height: 34px; }
+  .unified-header .brand { font-size: 1rem; gap: 8px; }
+  .unified-header .brand svg { width: 24px; }
   body .unified-header .site-nav {
     display: flex;
     position: absolute;
@@ -88,7 +108,6 @@ body .unified-header .site-nav a.lang-switch {
   }
   .js body .unified-header .site-nav { display: none; }
   .js body .unified-header.menu-open .site-nav { display: flex; }
-  body .unified-header .site-nav a.lang-switch { margin-left: 0; }
   html:not(.js) .unified-header { margin-bottom: 130px; }
 }
 @media print { body .site-header.unified-header { display: none; } }
