@@ -11,10 +11,10 @@
       image.src = still;
       playCount += 1;
       // A new URL starts the animated WebP at its first frame on every click.
-      image.src = animation + "?play=" + playCount;
-      // The 42 source frames run for about 2 seconds; hold the final frame
+      image.src = animation + "?play=" + Date.now() + "-" + playCount;
+      // The 40 source frames run for about 1.88 seconds; hold the final frame
       // for another 2 seconds before returning to the still image.
-      timer = setTimeout(function () { image.src = still; }, 4000);
+      timer = setTimeout(function () { image.src = still; }, 3880);
     });
   });
 }());
