@@ -1,0 +1,44 @@
+@import url("./chalk.css");
+
+.project-page { --display: Georgia, "Times New Roman", "WenKai", serif; }
+.project-page .site-header { position: fixed; inset: 0 0 auto; height: 76px; z-index: 100; }
+.project-page .site-header .container { max-width: 1280px; justify-content: space-between; }
+.project-back { display: inline-flex; align-items: center; gap: 12px; font-size: .9rem; text-decoration: none; }
+.project-back svg { width: 25px; height: 18px; transform: rotate(180deg); }
+.project-page .site-nav { gap: 24px; }
+.project-breadcrumb { max-width: 1160px; margin: 0 auto; padding: 122px 32px 0; display: flex; justify-content: space-between; color: var(--ink-faint); font-size: .7rem; font-family: var(--display); letter-spacing: .15em; text-transform: uppercase; }
+.project-page .project-article { max-width: 1160px; padding-top: 45px; content-visibility: visible; contain-intrinsic-size: none; padding-bottom: 80px; }
+.project-article > .chapter-rule { display: none; }
+.project-article .chapter-title { font-family: var(--display); font-size: clamp(45px, 7.5vw, 96px); letter-spacing: -.045em; line-height: 1.05; }
+.project-article .chapter-title .stroke { height: .2em; }
+.project-article .chapter-lead { max-width: 66ch; margin-top: 30px; }
+.project-article .chapter-meta { margin-top: 25px; }
+.project-article .spring-garland { display: none; }
+.project-article .video-frame { margin-top: 50px; }
+.project-article .facts { max-width: 54rem; }
+.project-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1096px; margin: 0 auto; padding: 38px 0 70px; border-top: 1px solid var(--line); }
+.project-pagination a { text-decoration: none; display: block; }
+.project-pagination a:last-child { text-align: right; }
+.project-pagination small { display: block; font-size: .72rem; letter-spacing: .1em; color: var(--ink-faint); margin-bottom: 7px; }
+.project-pagination strong { font-family: var(--display); font-weight: 400; font-size: clamp(20px, 2.7vw, 32px); color: var(--ink); }
+html[lang="en"] .project-page { --heading: "Portfolio Chalk", "WenKai", Georgia, serif; }
+html[lang="en"] .project-article .chapter-title { font-family: var(--heading); font-weight: 400; letter-spacing: -.025em; line-height: 1.1; }
+html[lang="en"] .project-pagination strong { font-family: var(--heading); }
+.project-page .site-footer { padding-block: 35px; }
+.project-page .site-footer > .container > p { font-size: .85rem; }
+.project-page .site-footer .fine { font-size: .7rem; }
+@media (max-width: 760px) {
+  .project-page .site-header { height: 65px; }
+  .project-page .site-header .container { padding-inline: 19px; gap: 12px; }
+  .project-page .site-nav { gap: 12px; }
+  .project-page .site-nav a.lang-switch { white-space: nowrap; padding: 4px 6px; border-radius: 2px; font-size: .78rem; }
+  .project-page .site-nav .theme-toggle { width: 32px; height: 32px; }
+  .project-page .site-nav .optional { display: none; }
+  .project-back { font-size: .78rem; gap: 7px; white-space: nowrap; flex-shrink: 0; }
+  .project-breadcrumb { padding: 95px 23px 0; font-size: .6rem; gap: 20px; }
+  .project-page .project-article { padding-top: 40px; padding-inline: 23px; padding-bottom: 45px; }
+  .project-article .chapter-lead { font-size: 1rem; }
+  .project-article .chapter-title { overflow-wrap: anywhere; }
+  .project-pagination { padding: 28px 23px 45px; gap: 20px; }
+  .project-pagination strong { font-size: 22px; }
+}

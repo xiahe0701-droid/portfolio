@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yunxi Wang · Résumé</title>
+<meta name="description" content="Résumé of Yunxi (Welkin) Wang: Computer Science at Hamilton College, game developer and illustrator. Education, experience, projects, and skills.">
+<link rel="alternate" hreflang="en" href="./resume.html">
+<link rel="alternate" hreflang="zh-Hans" href="zh/resume.html">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<script>
+(function () {
+  document.documentElement.classList.add("js");
+  try {
+    var saved = localStorage.getItem("xh-theme");
+    var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+  } catch (e) {}
+})();
+</script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="f-rough" x="-8%" y="-40%" width="116%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.12 0.5" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="i-stroke" viewBox="0 0 240 36" preserveAspectRatio="none">
+      <g filter="url(#f-rough)" fill="none" stroke="#E9C45C" stroke-linecap="round">
+        <path d="M8 20 Q 60 13 118 17 T 232 18" stroke-width="17" opacity=".5"/>
+        <path d="M14 22 Q 80 16 150 19 T 228 20" stroke-width="12" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 32 20">
+      <path d="M2.5 10.4 Q 14 9.2 28.5 9.9 M 22.5 4.2 Q 26.5 7.6 29.5 9.9 Q 26 12.4 22.8 15.6"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-bloom" viewBox="0 0 24 24">
+      <g fill="currentColor">
+        <ellipse cx="12" cy="5.6" rx="2.5" ry="3.4" transform="rotate(4 12 5.6)"/>
+        <ellipse cx="18" cy="10.4" rx="2.4" ry="3.3" transform="rotate(76 18 10.4)"/>
+        <ellipse cx="15.7" cy="17.4" rx="2.4" ry="3.2" transform="rotate(148 15.7 17.4)"/>
+        <ellipse cx="8.3" cy="17.4" rx="2.5" ry="3.3" transform="rotate(212 8.3 17.4)"/>
+        <ellipse cx="6" cy="10.4" rx="2.4" ry="3.3" transform="rotate(284 6 10.4)"/>
+      </g>
+      <circle cx="12" cy="11.8" r="2.6" fill="var(--paper, #F4EDDC)"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M12 2.6 L12 4.8"/><path d="M12 19.2 L12 21.4"/>
+        <path d="M2.6 12 L4.8 12"/><path d="M19.2 12 L21.4 12"/>
+        <path d="M5.2 5.2 L6.8 6.8"/><path d="M17.2 17.2 L18.8 18.8"/>
+        <path d="M18.8 5.2 L17.2 6.8"/><path d="M6.8 17.2 L5.2 18.8"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M14.8 3.4 Q 9.2 5 9.3 11.2 Q 9.4 17.5 15.6 18.6 Q 12.9 20.7 9.5 20 Q 3.9 18.8 3.6 12.6 Q 3.4 6.6 9.2 4.3 Q 11.9 3.2 14.8 3.4 Z"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/>
+      <circle cx="20" cy="10.2" r=".6" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="back-link" href="index.html">
+      <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+      Back to the portfolio
+    </a>
+    <nav class="site-nav" aria-label="Page actions"><a href="index.html">Home</a>
+      <a class="lang-switch" href="zh/resume.html" lang="zh-CN" aria-label="切换到中文版">中文</a>
+      <button class="theme-toggle" type="button" aria-label="Switch between light and dark">
+        <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="resume-main container" id="main">
+  <div class="resume-head">
+    <h1>Résumé <svg class="stroke" aria-hidden="true"><use href="#i-stroke"/></svg></h1>
+    <p class="sub">YUNXI (WELKIN) WANG</p>
+  </div>
+
+  <div class="resume-body">
+
+    <section class="resume-section" aria-labelledby="rs-basic">
+      <h2 id="rs-basic"><svg aria-hidden="true"><use href="#i-bloom"/></svg>Profile</h2>
+      <div class="info-grid">
+        <p><span class="label">Name</span>Yunxi (Welkin) Wang</p>
+        <p><span class="label">Role</span>Game developer · Illustrator</p>
+        <p><span class="label">School</span>Hamilton College · Computer Science · Class of 2027</p>
+        <p><span class="label">Phone</span>+1 315-520-3167</p>
+        <p><span class="label">itch.io</span><a href="https://welkin0701.itch.io/" target="_blank" rel="noopener">welkin0701.itch.io</a></p>
+      </div>
+    </section>
+
+    <section class="resume-section" aria-labelledby="rs-edu">
+      <h2 id="rs-edu"><svg aria-hidden="true"><use href="#i-bloom"/></svg>Education</h2>
+      <div class="entry">
+        <p class="when">08/2023 – 05/2027 (expected)</p>
+        <div class="what">
+          <h3>Hamilton College</h3>
+          <p class="role">Bachelor of Arts in Computer Science</p>
+          <ul>
+            <li>Awarded Dean's Honor List for five consecutive semesters</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" aria-labelledby="rs-work">
+      <h2 id="rs-work"><svg aria-hidden="true"><use href="#i-bloom"/></svg>Experience</h2>
+      <div class="entry">
+        <p class="when">Current</p>
+        <div class="what">
+          <h3>Creative Academic Technology Tutor (CAT Tutor)</h3>
+          <p class="role">Hamilton College · Library &amp; IT Services</p>
+          <ul>
+            <li>Assisted students with course projects in 3D modeling, VR, and game engines, and taught related classes</li>
+            <li>Listed expertise: Unity · Unreal Engine · InDesign · Premiere (<a href="https://www.hamilton.edu/offices/lits/research-instructional-design/team-members/student-tutors" target="_blank" rel="noopener">hamilton.edu · Student Tutors</a>)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <p class="when">06/2025</p>
+        <div class="what">
+          <h3>Shanghai Guangyan Network Technology Co., Ltd.</h3>
+          <p class="role">System Planning Intern · Star Will (a male-oriented mobile Galgame)</p>
+          <ul>
+            <li>Optimized character combat presentation, camera direction, battle UI, and visual effects; designed cut-in animations for backline character combo skill activations to improve player awareness of triggered combos</li>
+            <li>Redesigned the main interface information architecture by reorganizing functional categories to remove redundant access points; introduced a fixed navigation bar integrating commonly used functions with the in-game menu</li>
+            <li>Designed the functional framework for the "Training Notes" system, including character/collectible tracking, progression-based reward unlocking, and global bonus mechanisms; contributed to the "Beacon" system by planning recurring sources of upgrade materials</li>
+            <li>Created test cases and performed functional testing for newly added or optimized modules; participated in character design discussions and narrative development</li>
+          </ul>
+          <ul class="entry-tags"><li>Systems design</li><li>UI/UX</li><li>Functional testing</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" aria-labelledby="rs-proj">
+      <h2 id="rs-proj"><svg aria-hidden="true"><use href="#i-bloom"/></svg>Projects</h2>
+
+      <div class="entry">
+        <p class="when">Personal project</p>
+        <div class="what">
+          <h3>Inbetween · Hand-drawn narrative adventure</h3>
+          <p class="role">Code / animation / narrative (art by a collaborator)</p>
+          <ul>
+            <li>Designed and implemented the choice-memory system branching into multiple endings: Knight / King / Priest, and a hidden one</li>
+            <li>Created all character animation, cutscenes, and branching narrative text</li>
+            <li>Published as Unity WebGL, playable in the browser with no install</li>
+          </ul>
+          <ul class="entry-tags"><li>Unity</li><li>C#</li><li>WebGL</li><li>Two-person team</li></ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="when">Personal project</p>
+        <div class="what">
+          <h3>Bring the Spring · A cozy game created in Unity</h3>
+          <p class="role">Solo developer (code / art / animation / sound / writing)</p>
+          <ul>
+            <li>Produced 2D art assets for characters, dual-themed winter/spring scenes, interactive objects, and UI</li>
+            <li>Implemented game logic and interaction systems in Unity (C#): character movement, tree-shaking and item-drop collection, snow excavation, slingshot aiming and icicle destruction, and progression</li>
+            <li>Designed custom animations and audio feedback for interactive actions; used Unity's particle system for continuous falling snow</li>
+            <li>Collected feedback from 4 playtesters and completed 2 rounds of iterative updates</li>
+          </ul>
+          <ul class="entry-tags"><li>Unity</li><li>C#</li><li>Frame-by-frame animation</li></ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="when">Fall 2025</p>
+        <div class="what">
+          <h3>Fox Run · Game Boy 2D side-scroller</h3>
+          <p class="role">Built with fellow students · course project, CPSCI-240 Computer Organization and Assembly Language</p>
+          <ul>
+            <li>Used assembly language to implement movement, jumping, collision detection, health points, and win/loss conditions — a complete, playable 436 KB ROM</li>
+            <li>Designed pixel-art assets in Aseprite, reusing graphical assets to reduce ROM footprint under Game Boy hardware constraints</li>
+            <li>Programmed the fox character from 20 sprite tiles, with a macro-based batch update mechanism to synchronize coordinate changes</li>
+            <li>Studied the GBC's expanded memory architecture and color palette system to improve visual presentation</li>
+          </ul>
+          <ul class="entry-tags"><li>Assembly</li><li>Game Boy Color</li><li>Aseprite</li></ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="when">Spring 2025</p>
+        <div class="what">
+          <h3>Text adventure game in C++ · Multi-ending narrative</h3>
+          <p class="role">Solo developer · course project, CPSCI-102 Design Principles</p>
+          <ul>
+            <li>Introduced a centralized Game Manager to decouple Player/Narrator/Combat modules, eliminating circular dependencies</li>
+            <li>Adopted a file-driven architecture that parsed external text files to control narrative progression and trigger branching endings without modifying program logic</li>
+            <li>Used a circular doubly linked list to implement a Minecraft-style inventory hotbar; built a generic Item template class encapsulating equipment, consumables, and stat modification</li>
+            <li>Implemented a typewriter-style text rendering system with time-controlled character-by-character output</li>
+          </ul>
+          <ul class="entry-tags"><li>C++</li><li>OO design</li><li>Narrative systems</li></ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="when">Ongoing</p>
+        <div class="what">
+          <h3>EnlightenThem</h3>
+          <p class="role">Solo developer · concept stage</p>
+          <ul>
+            <li>A new narrative project in a dark painterly style with film-frame framing; 6 concept pieces and an interface design sheet completed</li>
+          </ul>
+          <ul class="entry-tags"><li>Concept art</li><li>Narrative</li></ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="when">Summer 2026 –</p>
+        <div class="what">
+          <h3>A Legend · Pixel side-scrolling action game</h3>
+          <p class="role">Solo developer (code / pixel art)</p>
+          <ul>
+            <li>In development on Unity 6: side-scrolling platforming and melee action, with self-drawn pixel art</li>
+            <li>Source: <a href="https://github.com/xiahe0701-droid/A-Legend" target="_blank" rel="noopener">github.com/xiahe0701-droid/A-Legend</a></li>
+          </ul>
+          <ul class="entry-tags"><li>Unity 6</li><li>Pixel art</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" aria-labelledby="rs-skill">
+      <h2 id="rs-skill"><svg aria-hidden="true"><use href="#i-bloom"/></svg>Skills &amp; Interests</h2>
+      <ul class="skills">
+        <li><b>Programming</b><span> · Python / C++ / C# / assembly</span></li>
+        <li><b>Engines &amp; tools</b><span> · Unity / Unreal Engine / Aseprite</span></li>
+        <li><b>Art</b><span> · illustration / pixel art / frame-by-frame animation</span></li>
+        <li><b>Design software</b><span> · InDesign / Premiere</span></li>
+        <li><b>TRPG</b><span> · module design &amp; prop art</span></li>
+        <li><b>Golf</b><span> · 5 handicap</span></li>
+        <li><b>Writing</b><span> · game copy &amp; narrative, fanfiction</span></li>
+      </ul>
+    </section>
+
+    <p class="resume-foot-note">Playable builds of every game are in the <a href="index.html">portfolio</a>; more on itch.io: <a href="https://welkin0701.itch.io/" target="_blank" rel="noopener">welkin0701.itch.io</a>.</p>
+  </div>
+</main>
+
+<footer class="play-footer">
+  <div class="container">© 2026 Yunxi Wang</div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

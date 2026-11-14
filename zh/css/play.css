@@ -1,0 +1,101 @@
+.play-main { padding: clamp(var(--s5), 4vh, var(--s7)) 0 var(--s8); }
+
+.play-head { text-align: center; margin-bottom: var(--s5); }
+.play-head h1 {
+  font-size: var(--t-chapter);
+  letter-spacing: .04em;
+  position: relative;
+  display: inline-block;
+}
+.play-head h1 .stroke {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: -.05em;
+  transform: translateX(-50%);
+  width: 112%;
+  height: .55em;
+  opacity: .8;
+}
+.play-head .meta {
+  color: var(--ink-soft);
+  font-size: var(--t-meta);
+  margin: var(--s3) auto 0;
+  max-width: none;
+}
+
+.stage-wrap { max-width: 66rem; margin-inline: auto; }
+.stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: min(100%, calc((100vh - 19rem) * 4 / 3));
+  min-width: min(100%, 20rem);
+  margin-inline: auto;
+  background: #161B24;
+  border: 10px solid var(--mat);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.stage.gbc {
+  aspect-ratio: 160 / 144;
+  width: min(100%, 30rem, calc((100vh - 19rem) * 160 / 144));
+}
+.stage iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.stage-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  background: #1B202B;
+  transition: opacity .5s ease, visibility .5s ease;
+}
+.stage-loading.hidden { opacity: 0; visibility: hidden; }
+.stage-loading .inner { text-align: center; color: #D8D2BE; padding: var(--s5); }
+.stage-loading img {
+  width: 72px;
+  margin-inline: auto;
+  animation: bob 1.6s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+.stage-loading .msg { font-size: var(--t-lead); margin: var(--s4) 0 0; max-width: none; }
+.stage-loading .tip { font-size: var(--t-meta); color: #9B9684; margin: var(--s2) 0 0; max-width: 30em; }
+.loading-dots::after {
+  content: " · · ·";
+  animation: dots 1.4s ease-in-out infinite;
+  display: inline-block;
+}
+@keyframes dots {
+  0%, 100% { opacity: .15; }
+  50% { opacity: 1; }
+}
+
+.play-tips {
+  max-width: 66rem;
+  margin: var(--s5) auto 0;
+  text-align: center;
+}
+.play-tips .controls-list { margin-top: 0; }
+.play-tips .hint {
+  color: var(--ink-faint);
+  font-size: var(--t-meta);
+  margin: var(--s3) auto 0;
+  max-width: none;
+}
+.play-tips .hint a { color: var(--blue); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stage-loading img { animation: none; }
+}

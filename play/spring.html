@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yunxi Wang · Play Bring the Spring</title>
+<meta name="description" content="Play Bring the Spring in the browser — a cozy winter miniature set in a snowed-in town.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<script>
+(function () {
+  document.documentElement.classList.add("js");
+  try {
+    var saved = localStorage.getItem("xh-theme");
+    var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+  } catch (e) {}
+})();
+</script>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/play.css">
+</head>
+<body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="f-rough" x="-8%" y="-40%" width="116%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.12 0.5" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="i-stroke" viewBox="0 0 240 36" preserveAspectRatio="none">
+      <g filter="url(#f-rough)" fill="none" stroke="#E9C45C" stroke-linecap="round">
+        <path d="M8 20 Q 60 13 118 17 T 232 18" stroke-width="17" opacity=".5"/>
+        <path d="M14 22 Q 80 16 150 19 T 228 20" stroke-width="12" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 32 20">
+      <path d="M2.5 10.4 Q 14 9.2 28.5 9.9 M 22.5 4.2 Q 26.5 7.6 29.5 9.9 Q 26 12.4 22.8 15.6"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M12 2.6 L12 4.8"/><path d="M12 19.2 L12 21.4"/>
+        <path d="M2.6 12 L4.8 12"/><path d="M19.2 12 L21.4 12"/>
+        <path d="M5.2 5.2 L6.8 6.8"/><path d="M17.2 17.2 L18.8 18.8"/>
+        <path d="M18.8 5.2 L17.2 6.8"/><path d="M6.8 17.2 L5.2 18.8"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M14.8 3.4 Q 9.2 5 9.3 11.2 Q 9.4 17.5 15.6 18.6 Q 12.9 20.7 9.5 20 Q 3.9 18.8 3.6 12.6 Q 3.4 6.6 9.2 4.3 Q 11.9 3.2 14.8 3.4 Z"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/>
+      <circle cx="20" cy="10.2" r=".6" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="back-link" href="../index.html#spring">
+      <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+      Back to the portfolio
+    </a>
+    <nav class="site-nav" aria-label="Page actions"><a href="../index.html">Home</a>
+      <a class="lang-switch" href="../zh/play/spring.html" lang="zh-CN" aria-label="切换到中文版">中文</a>
+      <button class="theme-toggle" type="button" aria-label="Switch between light and dark">
+        <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="play-main container" id="main">
+  <div class="play-head">
+    <h1>Bring the Spring <svg class="stroke" aria-hidden="true"><use href="#i-stroke"/></svg></h1>
+    <p class="meta">A town where it has snowed for a long time · carry spring back piece by piece</p>
+  </div>
+
+  <div class="stage-wrap">
+    <div class="stage">
+      <iframe id="game-frame" data-game="unity"
+              src="../games/bring-the-spring/index.html"
+              title="Bring the Spring game window"
+              allow="fullscreen; autoplay"
+              allowfullscreen></iframe>
+      <div class="stage-loading" id="stage-loading">
+        <div class="inner">
+          <img src="../assets/chicken.png" alt="">
+          <p class="msg">Opening this world<span class="loading-dots"></span></p>
+          <p class="tip">This world is about 35 MB — once the loading bar fills, you are in. It will not be long.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="play-tips">
+    <ul class="controls-list">
+      <li>Click to interact</li>
+      <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys to move</li>
+    </ul>
+    <p class="hint">If the keyboard stops responding, click the game once. You can also <a href="../games/bring-the-spring/index.html" target="_blank" rel="noopener">open the raw game page in a new tab</a>.</p>
+  </div>
+</main>
+
+<footer class="play-footer">
+  <div class="container">© 2026 Yunxi Wang</div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/play.js?v=4" defer></script>
+</body>
+</html>

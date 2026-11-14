@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inbetween · Yunxi Wang</title>
+<meta name="description" content="一位小王子被国王派上路。一路上抉择接着抉择——受伤的兔子、乞讨的老人、海里溺水的陌生人——而他从不独自决定：两个玩家各自给他身边的一个精灵注入能量，把他往不同的方向拉。路走完时他长成什么人，是你们一起替他做的决定。">
+<link rel="icon" href="../assets/favicon.png"><link rel="alternate" hreflang="en" href="../../projects/inbetween.html">
+<link rel="stylesheet" href="../css/main.css"><link rel="stylesheet" href="../../css/projects.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('xh-theme');document.documentElement.setAttribute('data-theme',t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}</script>
+</head><body class="project-page" id="top">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="f-rough" x="-8%" y="-40%" width="116%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.12 0.5" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="i-stroke" viewBox="0 0 240 36" preserveAspectRatio="none">
+      <g filter="url(#f-rough)" fill="none" stroke="#E9C45C" stroke-linecap="round">
+        <path d="M8 20 Q 60 13 118 17 T 232 18" stroke-width="17" opacity=".5"/>
+        <path d="M14 22 Q 80 16 150 19 T 228 20" stroke-width="12" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="i-wave" viewBox="0 0 180 14">
+      <path d="M2 8.5 Q 13 3.5 24 7.8 T 46 7.2 T 68 8.6 T 90 6.8 T 112 8.4 T 134 7 T 156 8.2 T 178 7.4"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-bloom" viewBox="0 0 24 24">
+      <g fill="currentColor">
+        <ellipse cx="12" cy="5.6" rx="2.5" ry="3.4" transform="rotate(4 12 5.6)"/>
+        <ellipse cx="18" cy="10.4" rx="2.4" ry="3.3" transform="rotate(76 18 10.4)"/>
+        <ellipse cx="15.7" cy="17.4" rx="2.4" ry="3.2" transform="rotate(148 15.7 17.4)"/>
+        <ellipse cx="8.3" cy="17.4" rx="2.5" ry="3.3" transform="rotate(212 8.3 17.4)"/>
+        <ellipse cx="6" cy="10.4" rx="2.4" ry="3.3" transform="rotate(284 6 10.4)"/>
+      </g>
+      <circle cx="12" cy="11.8" r="2.6" fill="var(--paper, #F4EDDC)"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 20 20">
+      <path d="M6.2 3.8 Q 6 3.6 6.3 3.5 L 16.2 9.6 Q 16.6 9.9 16.2 10.2 L 6.4 16.4 Q 6 16.6 6.1 16.1 Z"
+            fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 32 20">
+      <path d="M2.5 10.4 Q 14 9.2 28.5 9.9 M 22.5 4.2 Q 26.5 7.6 29.5 9.9 Q 26 12.4 22.8 15.6"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-ext" viewBox="0 0 20 20">
+      <path d="M8.2 4.4 H4.6 Q 3.5 4.4 3.5 5.5 V15.2 Q 3.5 16.4 4.7 16.4 H14.4 Q 15.5 16.4 15.5 15.3 V11.6 M 8.9 11 Q 12.6 7.3 16.2 3.8 M 11.5 3.6 L 16.4 3.5 L 16.4 8.4"
+            fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M12 2.6 L12 4.8"/><path d="M12 19.2 L12 21.4"/>
+        <path d="M2.6 12 L4.8 12"/><path d="M19.2 12 L21.4 12"/>
+        <path d="M5.2 5.2 L6.8 6.8"/><path d="M17.2 17.2 L18.8 18.8"/>
+        <path d="M18.8 5.2 L17.2 6.8"/><path d="M6.8 17.2 L5.2 18.8"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M14.8 3.4 Q 9.2 5 9.3 11.2 Q 9.4 17.5 15.6 18.6 Q 12.9 20.7 9.5 20 Q 3.9 18.8 3.6 12.6 Q 3.4 6.6 9.2 4.3 Q 11.9 3.2 14.8 3.4 Z"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/>
+      <circle cx="20" cy="10.2" r=".6" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-dpad" viewBox="0 0 64 64">
+      <path d="M25 6 h14 v19 h19 v14 h-19 v19 h-14 v-19 h-19 v-14 h19 Z"
+            fill="#4A5064" stroke="#3B4050" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="32" cy="32" r="6" fill="#3B4050"/>
+    </symbol>
+  </defs>
+</svg>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header"><div class="container"><a class="project-back" href="../index.html#inbetween"><svg class="" aria-hidden="true"><use href="#i-arrow"/></svg>返回作品集</a><nav class="site-nav" aria-label="页面导航"><a href="../index.html">主页</a><a class="optional" href="../index.html#illustrations">画册</a><a href="../resume.html">简历</a><a class="lang-switch" href="../../projects/inbetween.html" lang="en">EN</a><button class="theme-toggle" type="button" aria-label="切换明暗主题"><svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg></button></nav></div></header>
+<div class="project-breadcrumb"><span>精选作品 / 01</span><span>Inbetween</span></div>
+<main id="main"><article class="chapter container project-article" id="inbetween" aria-labelledby="inbetween-title">
+    <div class="chapter-rule" aria-hidden="true">
+      <svg class="wave"><use href="#i-wave"/></svg>
+      <svg class="bloom"><use href="#i-bloom"/></svg>
+      <svg class="wave"><use href="#i-wave"/></svg>
+    </div>
+    <header class="chapter-head reveal">
+      <p class="chapter-kicker">第一章 · 叙事冒险</p>
+      <h1 class="chapter-title" id="inbetween-title">
+        Inbetween
+        <svg class="stroke" aria-hidden="true"><use href="#i-stroke"/></svg>
+      </h1>
+      <ul class="chapter-meta">
+        <li>Unity WebGL</li>
+        <li>手绘绘本画风</li>
+        <li>多结局</li>
+        <li>双人游玩</li>
+      </ul>
+      <p class="chapter-lead">一位小王子被国王派上路。一路上抉择接着抉择——受伤的兔子、乞讨的老人、海里溺水的陌生人——而他从不独自决定：两个玩家各自给他身边的一个精灵注入能量，把他往不同的方向拉。路走完时他长成什么人，是你们一起替他做的决定。</p>
+    </header>
+
+    <div class="chapter-body">
+      <figure class="video-frame mat reveal">
+        <video controls preload="none" playsinline poster="../assets/poster-inbetween.jpg"
+               aria-label="Inbetween 预告片，95 秒">
+          <source src="../../media/inbetween-trailer.mp4" type="video/mp4">
+        </video>
+        <figcaption>预告片 · 95 秒</figcaption>
+      </figure>
+
+      <div class="facts reveal">
+        <div class="facts-grid">
+          <p><span class="facts-label">角色</span>程序 · 动画 · 叙事（美术由合作者完成）</p>
+          <p><span class="facts-label">技术</span>Unity · C# · WebGL</p>
+          <p><span class="facts-label">体量</span>约 78 MB · 首次加载需要十几秒</p>
+        </div>
+        <ul>
+          <li>实现双精灵机制：两个玩家向对立的精灵注入能量，此消彼长决定王子下一步怎么走</li>
+          <li>设计「选择会被记住」的分支系统，通向骑士、国王、牧师，以及一个隐藏结局</li>
+          <li>完成全部角色动画与过场演出，撰写对话与分支叙事文本</li>
+          <li>以 Unity WebGL 发布，浏览器免安装直接游玩</li>
+        </ul>
+      </div>
+
+      <h2 class="gallery-label">故 事 里 的 世 界</h2>
+      <ul class="gallery">
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/1458_meeting-the-rabbit.png" data-caption="《遇见兔子》——森林深处，粉色的兔子受了伤">
+              <span class="mat"><img src="../assets/gal/rabbit.webp" alt="游戏场景：蓝绿色笔触的森林里，戴王冠的小孩遇见一只粉色兔子" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">遇见兔子</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/2523_ice-crevasse.png" data-caption="《海上遇险》——有人正在下沉，救，还是划开">
+              <span class="mat"><img src="../assets/gal/boat.webp" alt="游戏场景：戴王冠的小王子划船穿过灰白的海崖，水里有人向他伸手求救" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">海上遇险</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/1455_startPage.png" data-caption="《启程》——开始界面的两联画">
+              <span class="mat"><img src="../assets/gal/startpage.webp" alt="开始界面两联画：左边披蓝斗篷的小孩浮在城堡上空，右边一个戴小王冠的蓝色圆球垂着两条细腿" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">启程</figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <h2 class="gallery-label">多 结 局 ， 先 看 三 种</h2>
+      <ul class="gallery">
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/2915_ending-knight.png" data-caption="骑士结局——蓝色的月牙与盔甲">
+              <span class="mat"><img src="../assets/gal/end-knight.webp" alt="骑士结局卡片：蓝色调，小孩穿着盔甲跪在格纹椭圆框里" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">骑士结局</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/2916_ending-king.png" data-caption="国王结局——金色的王座">
+              <span class="mat"><img src="../assets/gal/end-king.webp" alt="国王结局卡片：金棕色调，小孩坐在紫色王座上" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">国王结局</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <button class="shot" type="button" data-full="../../art/inbetween/full/2917_ending-priest.png" data-caption="牧师结局——灰白色的静修">
+              <span class="mat"><img src="../assets/gal/end-priest.webp" alt="牧师结局卡片：灰白色调，小孩穿着长袍读经书" loading="lazy" width="900" height="628"></span>
+            </button>
+            <figcaption class="figure-caption">牧师结局</figcaption>
+          </figure>
+        </li>
+      </ul>
+      <p class="diptych-note">其余的结局，留给你自己玩出来。</p>
+
+      <h2 class="gallery-label">选 择 的 重 量</h2>
+      <div class="diptych">
+        <figure>
+          <button class="shot" type="button" data-full="../../art/inbetween/full/2115_choice-bread.png" data-caption="把面包递给她">
+            <span class="mat"><img src="../assets/gal/bread.webp" alt="彩铅插画：戴王冠的小孩把一块面包递给蹲坐的老奶奶" loading="lazy" width="900" height="628"></span>
+          </button>
+          <figcaption class="figure-caption">把面包递给她</figcaption>
+        </figure>
+        <figure>
+          <button class="shot" type="button" data-full="../../art/inbetween/full/2120_choice-cuff.png" data-caption="或者，铐住她">
+            <span class="mat"><img src="../assets/gal/handcuff.webp" alt="彩铅插画：同一个小孩面无表情地铐住了老奶奶的双手" loading="lazy" width="900" height="628"></span>
+          </button>
+          <figcaption class="figure-caption">或者，铐住她</figcaption>
+        </figure>
+      </div>
+      <p class="diptych-note">同一双手，可以递出面包，也可以合上手铐——没有对错提示，只有被记住的选择。</p>
+
+      <div class="actions reveal">
+        <a class="btn" href="../play/inbetween.html">
+          <svg aria-hidden="true"><use href="#i-play"/></svg>
+          在浏览器里玩 Inbetween
+        </a>
+      </div>
+    </div>
+  </article></main>
+<nav class="project-pagination" aria-label="浏览其他项目"><a href="a-legend.html"><small>← 上一个项目</small><strong>A Legend</strong></a><a href="bring-the-spring.html"><small>下一个项目 →</small><strong>Bring the Spring</strong></a></nav>
+<footer class="site-footer">
+  <div class="container">
+    <img src="../assets/star.png" alt="" loading="lazy" width="30" height="44">
+    <p>写代码、画画、做游戏——都是同一件事。</p>
+    <p class="fine">© 2026 Yunxi Wang · <a href="https://welkin0701.itch.io/" target="_blank" rel="noopener">itch.io / welkin0701</a> · Inbetween 美术版权归合作者所有</p>
+    <a class="back-top" href="#top">
+      <svg style="width:22px;height:14px;transform:rotate(-90deg)" aria-hidden="true"><use href="#i-arrow"/></svg>
+      回到封面
+    </a>
+  </div>
+</footer>
+<dialog class="lightbox" id="lightbox" aria-label="查看大图">
+  <figure>
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+  <div class="lightbox-bar">
+    <button type="button" id="lightbox-prev" aria-label="上一张">← 上一张</button>
+    <button type="button" id="lightbox-close" aria-label="关闭大图">关闭 ✕</button>
+    <button type="button" id="lightbox-next" aria-label="下一张">下一张 →</button>
+  </div>
+</dialog>
+<script src="../js/main.js" defer></script>
+</body></html>

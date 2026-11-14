@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnlightenThem · Yunxi Wang</title>
+<meta name="description" content="一只自带光的萤火虫，被嫉妒这光的飞蛾掳走，要拿去当献祭的燃料。救它出来的不是力气，正是那束光——萤火虫用光把飞蛾引开，然后脱身。画风离开了水彩绘本，更暗也更粗粝。">
+<link rel="icon" href="../assets/favicon.png"><link rel="alternate" hreflang="en" href="../../projects/enlightenthem.html">
+<link rel="stylesheet" href="../css/main.css"><link rel="stylesheet" href="../../css/projects.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('xh-theme');document.documentElement.setAttribute('data-theme',t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}</script>
+</head><body class="project-page" id="top">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="f-rough" x="-8%" y="-40%" width="116%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.12 0.5" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="i-stroke" viewBox="0 0 240 36" preserveAspectRatio="none">
+      <g filter="url(#f-rough)" fill="none" stroke="#E9C45C" stroke-linecap="round">
+        <path d="M8 20 Q 60 13 118 17 T 232 18" stroke-width="17" opacity=".5"/>
+        <path d="M14 22 Q 80 16 150 19 T 228 20" stroke-width="12" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="i-wave" viewBox="0 0 180 14">
+      <path d="M2 8.5 Q 13 3.5 24 7.8 T 46 7.2 T 68 8.6 T 90 6.8 T 112 8.4 T 134 7 T 156 8.2 T 178 7.4"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-bloom" viewBox="0 0 24 24">
+      <g fill="currentColor">
+        <ellipse cx="12" cy="5.6" rx="2.5" ry="3.4" transform="rotate(4 12 5.6)"/>
+        <ellipse cx="18" cy="10.4" rx="2.4" ry="3.3" transform="rotate(76 18 10.4)"/>
+        <ellipse cx="15.7" cy="17.4" rx="2.4" ry="3.2" transform="rotate(148 15.7 17.4)"/>
+        <ellipse cx="8.3" cy="17.4" rx="2.5" ry="3.3" transform="rotate(212 8.3 17.4)"/>
+        <ellipse cx="6" cy="10.4" rx="2.4" ry="3.3" transform="rotate(284 6 10.4)"/>
+      </g>
+      <circle cx="12" cy="11.8" r="2.6" fill="var(--paper, #F4EDDC)"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 20 20">
+      <path d="M6.2 3.8 Q 6 3.6 6.3 3.5 L 16.2 9.6 Q 16.6 9.9 16.2 10.2 L 6.4 16.4 Q 6 16.6 6.1 16.1 Z"
+            fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 32 20">
+      <path d="M2.5 10.4 Q 14 9.2 28.5 9.9 M 22.5 4.2 Q 26.5 7.6 29.5 9.9 Q 26 12.4 22.8 15.6"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-ext" viewBox="0 0 20 20">
+      <path d="M8.2 4.4 H4.6 Q 3.5 4.4 3.5 5.5 V15.2 Q 3.5 16.4 4.7 16.4 H14.4 Q 15.5 16.4 15.5 15.3 V11.6 M 8.9 11 Q 12.6 7.3 16.2 3.8 M 11.5 3.6 L 16.4 3.5 L 16.4 8.4"
+            fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M12 2.6 L12 4.8"/><path d="M12 19.2 L12 21.4"/>
+        <path d="M2.6 12 L4.8 12"/><path d="M19.2 12 L21.4 12"/>
+        <path d="M5.2 5.2 L6.8 6.8"/><path d="M17.2 17.2 L18.8 18.8"/>
+        <path d="M18.8 5.2 L17.2 6.8"/><path d="M6.8 17.2 L5.2 18.8"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M14.8 3.4 Q 9.2 5 9.3 11.2 Q 9.4 17.5 15.6 18.6 Q 12.9 20.7 9.5 20 Q 3.9 18.8 3.6 12.6 Q 3.4 6.6 9.2 4.3 Q 11.9 3.2 14.8 3.4 Z"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <circle cx="17.5" cy="6.5" r=".9" fill="currentColor"/>
+      <circle cx="20" cy="10.2" r=".6" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-dpad" viewBox="0 0 64 64">
+      <path d="M25 6 h14 v19 h19 v14 h-19 v19 h-14 v-19 h-19 v-14 h19 Z"
+            fill="#4A5064" stroke="#3B4050" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="32" cy="32" r="6" fill="#3B4050"/>
+    </symbol>
+  </defs>
+</svg>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header"><div class="container"><a class="project-back" href="../index.html#wip"><svg class="" aria-hidden="true"><use href="#i-arrow"/></svg>返回作品集</a><nav class="site-nav" aria-label="页面导航"><a href="../index.html">主页</a><a class="optional" href="../index.html#illustrations">画册</a><a href="../resume.html">简历</a><a class="lang-switch" href="../../projects/enlightenthem.html" lang="en">EN</a><button class="theme-toggle" type="button" aria-label="切换明暗主题"><svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg></button></nav></div></header>
+<div class="project-breadcrumb"><span>精选作品 / 04</span><span>EnlightenThem</span></div>
+<main id="main"><article class="chapter container project-article" id="wip" aria-labelledby="wip-title">
+    <div class="chapter-rule" aria-hidden="true">
+      <svg class="wave"><use href="#i-wave"/></svg>
+      <svg class="bloom"><use href="#i-bloom"/></svg>
+      <svg class="wave"><use href="#i-wave"/></svg>
+    </div>
+    <header class="chapter-head reveal">
+      <p class="chapter-kicker">第四章 · 概念阶段</p>
+      <h1 class="chapter-title" id="wip-title">
+        EnlightenThem
+        <svg class="stroke" aria-hidden="true"><use href="#i-stroke"/></svg>
+      </h1>
+      <ul class="chapter-meta">
+        <li>概念阶段</li>
+        <li>独立开发</li>
+        <li>厚涂 · 胶片叙事</li>
+      </ul>
+      <p class="chapter-lead">一只自带光的萤火虫，被嫉妒这光的飞蛾掳走，要拿去当献祭的燃料。救它出来的不是力气，正是那束光——萤火虫用光把飞蛾引开，然后脱身。画风离开了水彩绘本，更暗也更粗粝。</p>
+    </header>
+
+    <div class="chapter-body">
+      <ul class="gallery two">
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/1.png" data-caption="EnlightenThem 概念图——提灯的萤火虫走过小镇">
+                <span class="mat"><img src="../assets/et/1.webp" alt="概念图：胶片边框里，发光的萤火虫飞过昏暗的小镇街道" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">小镇</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/2.png" data-caption="EnlightenThem 概念图——飞蛾抓住萤火虫">
+                <span class="mat"><img src="../assets/et/2.webp" alt="概念图：红眼睛的飞蛾扑住萤火虫，头顶是一个惊叹号" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">被掳走</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/3.png" data-caption="EnlightenThem 概念图——与蛾的遭遇">
+                <span class="mat"><img src="../assets/et/3.webp" alt="概念图：萤火虫回头，身后是红眼睛的灰色巨蛾" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">遭遇</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/4.png" data-caption="EnlightenThem 概念图——被封起来当献祭的燃料">
+                <span class="mat"><img src="../assets/et/4.webp" alt="概念图：被封进红眼外壳里的萤火虫，光从缝隙里透出来" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">当作燃料</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/5.png" data-caption="EnlightenThem 概念图——挂在暗房间里的茧">
+                <span class="mat"><img src="../assets/et/5.webp" alt="概念图：昏暗的房间里挂着一只灰绿色的茧，窗外透着夜光" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">茧</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/6.png" data-caption="EnlightenThem 概念图——标题画面草稿">
+                <span class="mat"><img src="../assets/et/6.webp" alt="概念图：标题画面草稿，萤火虫蜷在光晕中央，左下角是手写的开始与退出按钮" loading="lazy" width="900" height="675"></span>
+              </button>
+              <figcaption class="figure-caption">标题画面草稿</figcaption>
+            </figure>
+          </li>
+        </ul>
+      <figure class="design-sheet reveal">
+        <button class="shot" type="button" data-full="../../art/showcase/enlighten-them/web/design.png" data-caption="EnlightenThem——角色与界面设计稿">
+          <span class="mat"><img src="../assets/et/design.webp" alt="设计稿：烧焦边缘的羊皮纸面板、光柱与提示图标、两种姿态的萤火虫，以及两只红眼飞蛾" loading="lazy" width="1100" height="786"></span>
+        </button>
+        <figcaption class="figure-caption">角色与界面设计稿</figcaption>
+      </figure>
+
+    </div>
+  </article></main>
+<nav class="project-pagination" aria-label="浏览其他项目"><a href="fox-run.html"><small>← 上一个项目</small><strong>Fox Run</strong></a><a href="a-legend.html"><small>下一个项目 →</small><strong>A Legend</strong></a></nav>
+<footer class="site-footer">
+  <div class="container">
+    <img src="../assets/star.png" alt="" loading="lazy" width="30" height="44">
+    <p>写代码、画画、做游戏——都是同一件事。</p>
+    <p class="fine">© 2026 Yunxi Wang · <a href="https://welkin0701.itch.io/" target="_blank" rel="noopener">itch.io / welkin0701</a> · Inbetween 美术版权归合作者所有</p>
+    <a class="back-top" href="#top">
+      <svg style="width:22px;height:14px;transform:rotate(-90deg)" aria-hidden="true"><use href="#i-arrow"/></svg>
+      回到封面
+    </a>
+  </div>
+</footer>
+<dialog class="lightbox" id="lightbox" aria-label="查看大图">
+  <figure>
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+  <div class="lightbox-bar">
+    <button type="button" id="lightbox-prev" aria-label="上一张">← 上一张</button>
+    <button type="button" id="lightbox-close" aria-label="关闭大图">关闭 ✕</button>
+    <button type="button" id="lightbox-next" aria-label="下一张">下一张 →</button>
+  </div>
+</dialog>
+<script src="../js/main.js" defer></script>
+</body></html>

@@ -1,0 +1,207 @@
+/* Illustrated scenery for the English homepage. */
+.portfolio-home { --night: #061d30; }
+.portfolio-home .site-header .container { max-width: none; padding-inline: 4.5vw; }
+.forest-cover { min-height: 680px; height: clamp(680px, 86svh, 920px); }
+.forest-cover::before { background: linear-gradient(90deg, rgb(3 22 38 / .78), rgb(3 22 38 / .65)), url('../art/inbetween/full/1458_meeting-the-rabbit.png') center / cover no-repeat; filter: saturate(1.15); }
+.forest-art { width: 67%; height: 100%; object-fit: contain; object-position: right center; transform: translateY(var(--cover-drift, 0px)); filter: saturate(1.2) contrast(1.04); mask-image: linear-gradient(0deg, transparent 7%, #000 23%, #000 75%, transparent 94%); }
+.forest-cover::after { background: linear-gradient(90deg, rgb(5 25 42 / .25), rgb(5 25 42 / .8) 28%, rgb(5 25 42 / .76) 35%, rgb(5 25 42 / .12) 51%, transparent 66%), linear-gradient(0deg, #061c2d 0%, transparent 24%); }
+.forest-foreground { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; z-index: 0; pointer-events: none; }
+.cover-inner { max-width: none; padding: clamp(112px, 15svh, 155px) 8.3vw 130px; }
+.cover-eyebrow { display: none; }
+html[lang="en"] .cover-title { font-size: clamp(116px, 11.5vw, 190px); line-height: .94; margin: 0; }
+.cover-subtitle { margin: 23px 0 29px; font-size: clamp(24px, 2.5vw, 37px); }
+.cover-link, .project-link { border-radius: 1px 4px 2px 5px; outline: 1px solid currentColor; outline-offset: -4px; transform: rotate(-.5deg); font-family: var(--display); }
+.cover-stars { left: 2.8%; top: 58px; width: 38%; height: 380px; opacity: 1; z-index: 2; }
+.cover-spark { right: 3%; top: 70px; height: 185px; opacity: 1; }
+.cover-bottom { left: 8.3vw; bottom: 65px; z-index: 3; }
+.cover-chapters a { font-family: var(--display); font-size: 1.08rem; }
+.cover-credit { right: 13px; opacity: .65; }
+.paper-edge { display: block; height: 85px; background: url('../assets/forest-decor/chalk-edge.svg') center bottom / 100% 100% no-repeat; z-index: 4; }
+.paper-edge path { display: none; }
+.forest-cover > .forest-foreground { border: 0; }
+.forest-cover { border-bottom: 0; }
+.works-intro { padding-top: 17px; padding-bottom: 0; font-size: .65rem; opacity: .7; }
+.project-spread { min-height: 650px; padding-top: 38px; padding-bottom: 120px; }
+.spread-layout { max-width: 1360px; grid-template-columns: .95fr 1.6fr; gap: 42px; }
+.spread-spring .spread-layout, .spread-enlighten .spread-layout { grid-template-columns: 1.6fr .95fr; }
+html[lang="en"] .spread-title { font-size: clamp(66px, 6.5vw, 106px); line-height: 1.02; }
+.spread-kicker { margin-bottom: 13px; }
+.spread-type { margin-top: 18px; font-family: var(--display); font-size: 1.13rem; }
+.spread-role { font-size: .95rem; }
+.spread-summary { max-width: 32ch; }
+.project-spread::after { content: ''; position: absolute; z-index: -1; pointer-events: none; inset: auto 0 0; height: 290px; background: url('../assets/forest-decor/paper-garden.svg') center bottom / 100% 100% no-repeat; }
+.spread-spring::after { transform: scaleX(-1); filter: hue-rotate(325deg) saturate(.7); }
+.spread-foxrun::after { filter: hue-rotate(345deg) saturate(.7); }
+.spread-enlighten::after { opacity: .6; }
+.spread-deco { left: 0; width: 80px; height: 220px; bottom: 135px; opacity: .45; color: #7e8770; }
+.spread-deco.right { right: 2%; }
+.spread-gnome { width: 64px; right: -10px; bottom: -60px; transform: rotate(10deg); }
+.film-screen { border-radius: 1px; outline: 2px dashed rgb(73 63 39 / .25); outline-offset: 3px; }
+.folio { bottom: 25px; z-index: 3; }
+.folio > span { background: var(--paper); padding: 5px 9px; }
+.spread-enlighten .folio > span { background: #182e35; }
+@media (min-width: 1700px) {
+  .forest-art { width: 67%; object-fit: contain; object-position: right center; }
+  .forest-cover::before { background-size: cover; }
+  .cover-inner { padding-left: 8vw; }
+}
+@media (max-width: 1100px) and (min-width: 761px) {
+  .forest-art { width: 74%; object-position: 45% center; }
+  html[lang="en"] .cover-title { font-size: 12.5vw; }
+  .cover-inner { padding-left: 7vw; }
+  html[lang="en"] .spread-title { font-size: 7vw; }
+}
+@media (max-width: 760px) {
+  .forest-cover { height: auto; min-height: 810px; }
+  .forest-art { width: 100%; object-fit: cover; object-position: 54% center; opacity: .82; mask-image: none; }
+  .forest-cover::after { background: linear-gradient(90deg, rgb(5 25 42 / .88), rgb(5 25 42 / .65) 45%, rgb(5 25 42 / .12)), linear-gradient(0deg, #061d30, transparent 48%); }
+  .cover-inner { padding: 135px 26px 230px; }
+  html[lang="en"] .cover-title { font-size: clamp(96px, 23vw, 150px); line-height: .96; }
+  .cover-subtitle { font-size: 24px; }
+  .forest-foreground { object-fit: cover; object-position: left; opacity: .65; }
+  .cover-stars { left: -8%; top: 95px; width: 90%; height: 310px; }
+  .cover-spark { right: 15px; }
+  .cover-bottom { left: 26px; bottom: 65px; }
+  .cover-chapters a { font-size: .82rem; }
+  .cover-bottom::after { left: -35px !important; top: 78px !important; height: 65px !important; }
+  .works-intro { padding: 20px 25px 5px; }
+  .works-intro > span { display: none; }
+  .project-spread { padding: 40px 25px 135px; min-height: auto; }
+  .spread-layout, .spread-spring .spread-layout, .spread-enlighten .spread-layout { grid-template-columns: 1fr; gap: 28px; }
+  html[lang="en"] .spread-title { font-size: clamp(48px, 12vw, 76px); overflow-wrap: anywhere; }
+  .spread-type { font-size: 1rem; }
+  .spread-role { font-size: .8rem; }
+  .spread-deco { opacity: .2; bottom: 20px; }
+  .project-spread::after { height: 155px; }
+  .spread-gnome { width: 36px; right: 4px; bottom: 0; }
+  .folio { font-size: .54rem; }
+}
+@media (prefers-reduced-motion: reduce) { .forest-art { transform: none; } }
+
+/* The restored painted reference is the full hero; no vector scenery overlays. */
+.forest-cover {
+  min-height: 660px;
+  height: clamp(660px, 43vw, 900px);
+  background: #061d30 url('../assets/forest-decor/forest-hero-clean.png') 68% center / cover no-repeat;
+}
+.forest-cover::before, .forest-cover::after,
+.forest-art, .forest-foreground, .cover-stars, .cover-spark, .paper-edge { display: none; }
+.cover-inner { padding: clamp(112px, 8vw, 155px) 8.3vw 110px; }
+html[lang="en"] .cover-title { font-size: clamp(106px, 9.7vw, 170px); line-height: .82; }
+.cover-subtitle { margin: 20px 0 28px; }
+.cover-bottom { bottom: 50px; }
+.project-spread::after, .spread-deco { display: none; }
+@media (min-width: 1101px) {
+  .portfolio-home .site-header .container { display: grid; grid-template-columns: 25% 1fr; }
+  .portfolio-home .site-nav { margin-left: 0; width: 100%; justify-content: flex-start; gap: 44px; }
+  .portfolio-home .site-nav a.lang-switch { margin-left: auto; }
+}
+@media (max-width: 760px) {
+  .forest-cover { min-height: 810px; height: auto; background-size: cover; background-position: 68% center; }
+  .forest-cover::after { display: block; background: linear-gradient(90deg, rgb(7 28 43 / .65), rgb(7 28 43 / .18) 72%, transparent); }
+  .cover-inner { padding: 135px 26px 230px; }
+  html[lang="en"] .cover-title { font-size: clamp(96px, 23vw, 150px); line-height: .96; }
+  .cover-bottom { bottom: 58px; }
+}
+
+/* Real painted soil and botanicals, with an irregular alpha edge over each next page. */
+.project-spread { border-bottom: 0; min-height: 0; padding-bottom: 68px; }
+.project-spread .spread-kicker { display: none; }
+.project-spread .spread-copy { transform: translateY(-20px); }
+.painted-divider {
+  --divider-from: var(--paper);
+  --divider-to: var(--paper);
+  position: relative;
+  z-index: 3;
+  /* Source PNG is 2172 × 724: keep its original 3:1 aspect ratio. */
+  height: auto;
+  aspect-ratio: 3 / 1;
+  margin-top: calc(clamp(60px, 5vw, 100px) - 33.333333vw);
+  width: 100%;
+  pointer-events: none;
+  background: transparent;
+}
+.painted-divider::before {
+  content: '';
+  position: absolute;
+  inset: 80% 0 0;
+  background: var(--divider-to);
+}
+.painted-divider::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/forest-decor/painted-project-divider.png') center / contain no-repeat;
+}
+.painted-divider.to-spring { --divider-to: #efe7d5; }
+.painted-divider.to-fox { --divider-from: #efe7d5; --divider-to: #f5edda; }
+.painted-divider.to-fox::after { transform: scaleX(-1); }
+.painted-divider.to-enlighten { --divider-from: #f5edda; --divider-to: #182e35; }
+.painted-divider.to-sketchbook { --divider-from: #182e35; }
+.painted-divider.to-sketchbook::after { transform: scaleX(-1); }
+.spread-enlighten {
+  --ink: #142e3c;
+  --ink-soft: #52616a;
+  --ink-faint: #727a79;
+  --gold: #ad8039;
+  --cream: #f5ecd7;
+  --night: #071c2b;
+  color: var(--ink);
+  background: var(--paper);
+}
+.spread-enlighten .spread-kicker { color: #7e725a; }
+.spread-enlighten .folio > span { background: var(--paper); }
+.painted-divider.to-enlighten { --divider-to: var(--paper); }
+.painted-divider.to-sketchbook { --divider-from: var(--paper); --divider-to: #071c2b; }
+.home-destinations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 48px);
+  background: #071c2b;
+  padding: 70px max(6vw, calc((100vw - 1360px) / 2)) 100px;
+}
+.home-destinations > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 27px 28px;
+  color: #f5ecd7;
+  border: 1px solid #c0ad80;
+  outline: 1px solid rgb(192 173 128 / .45);
+  outline-offset: -5px;
+  border-radius: 2px 5px 3px 1px;
+  font-family: var(--heading);
+  font-size: clamp(25px, 2.4vw, 40px);
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.home-destinations > a:hover, .home-destinations > a:focus-visible { background: #17384c; transform: translateY(-4px); }
+.home-destinations > a span { font-family: Georgia, serif; font-size: 30px; color: #d2b473; }
+.interior-page .site-header { background: #071c2b; }
+.interior-page main { min-height: 75svh; padding-top: 100px; }
+.interior-page .chapter { padding-top: 65px; padding-bottom: 80px; }
+.interior-page .chapter-rule { display: none; }
+.archive-page { max-width: 1360px; padding: 65px 35px 90px; }
+.archive-page header { margin-bottom: 45px; }
+.archive-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 45px; }
+.archive-card { color: var(--ink); text-decoration: none; display: block; }
+.archive-card > img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid var(--line); }
+.archive-card > div { padding: 22px 0; }
+.archive-card h2 { font-family: var(--heading); font-weight: 400; font-size: clamp(32px, 3.5vw, 52px); }
+.archive-card p { margin: 10px 0; }
+.archive-card small { color: var(--ink-soft); }
+.archive-card span { display: block; margin-top: 18px; color: var(--gold); }
+.archive-card:hover img { outline: 2px solid var(--gold); outline-offset: 4px; }
+@media (max-width: 760px) {
+  .project-spread { padding-bottom: 65px; }
+  .painted-divider { margin-top: calc(45px - 33.333333vw); }
+  .home-destinations { grid-template-columns: 1fr; padding: 35px 25px 60px; gap: 20px; }
+  .home-destinations > a { font-size: 30px; padding: 25px; }
+  .interior-page main { padding-top: 70px; }
+  .archive-page { padding: 45px 25px; }
+  .archive-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* Align only the EnlightenThem video description to the right. */
+#wip .film-caption { justify-content: flex-end; text-align: right; }
