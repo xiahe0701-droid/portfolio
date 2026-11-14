@@ -153,6 +153,9 @@ html[lang="en"] .cover-title { font-size: clamp(106px, 9.7vw, 170px); line-heigh
 .spread-enlighten .folio > span { background: var(--paper); }
 .painted-divider.to-enlighten { --divider-to: var(--paper); }
 .painted-divider.to-sketchbook { --divider-from: #f5edda; --divider-to: #071c2b; }
+/* Keep every project call to action above the overlapping foliage. */
+.project-spread { isolation: auto; overflow: visible; }
+.project-spread .spread-copy { z-index: 4; }
 .home-destinations {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
