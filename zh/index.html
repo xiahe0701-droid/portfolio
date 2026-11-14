@@ -16,6 +16,7 @@
 <script>document.documentElement.classList.add("js");document.documentElement.setAttribute("data-theme", "light");</script>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="../css/home.css?v=20261114-buttons">
+<link rel="stylesheet" href="../css/navigation.css">
 </head>
 <body class="portfolio-home" id="top">
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -79,11 +80,11 @@
   </defs>
 </svg>
 <a class="skip-link" href="#main">跳到正文</a>
-<header class="site-header">
+<header class="site-header unified-header">
   <div class="container">
-    <a class="brand" href="#cover" aria-label="Yunxi Wang · 首页"><svg class="cover-crown" viewBox="0 0 34 34" aria-hidden="true"><path d="M5 26 4 10l8 8 5-13 5 13 9-9-4 18Z M5 30l22-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Yunxi Wang</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="home-nav" aria-label="打开导航"><svg viewBox="0 0 28 24" aria-hidden="true"><path d="M2 6h24M2 17h24" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
-    <nav class="site-nav" id="home-nav" aria-label="网站导航"><a href="index.html">主页</a><a href="#selected-works">作品</a><a href="#illustrations">画册</a><a href="#about">关于</a><a href="resume.html">简历</a><a class="lang-switch" href="../" lang="en" aria-label="Switch to English">EN / 中文</a></nav>
+    <a class="brand" href="index.html" aria-label="WELKIN · 首页"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 26 4 10l8 8 5-13 5 13 9-9-4 18Z M5 30l22-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>WELKIN</span></a>
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="打开导航"><svg viewBox="0 0 28 24" aria-hidden="true"><path d="M2 6h24M2 17h24" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+    <nav class="site-nav" id="site-navigation" aria-label="网站导航"><a href="index.html" aria-current="page">主页</a><a href="index.html#selected-works">作品</a><a href="index.html#illustrations">画册</a><a href="index.html#about">关于我</a><a href="resume.html">简历</a><a class="lang-switch" href="../index.html" lang="en" aria-label="Switch to English">EN / 中文</a></nav>
   </div>
 </header>
 <main id="main">
@@ -403,5 +404,6 @@
 </dialog>
 <script src="js/main.js" defer></script>
 <script src="../js/home.js" defer></script>
+<script src="../js/navigation.js" defer></script>
 </body>
 </html>

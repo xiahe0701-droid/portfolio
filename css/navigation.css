@@ -1,0 +1,94 @@
+/* Shared navigation for both languages and every portfolio page. */
+body .site-header.unified-header {
+  height: 76px;
+  background: #071c2b;
+  color: #f5ecd7;
+  border-bottom: 1px solid rgb(245 236 215 / .14);
+}
+body .site-header.unified-header .container {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  padding-inline: clamp(22px, 4.5vw, 72px);
+  justify-content: space-between;
+  gap: 24px;
+}
+.unified-header .brand {
+  color: #f5ecd7;
+  gap: 12px;
+  font: italic 1.2rem Georgia, "Times New Roman", "WenKai", serif;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.unified-header .brand svg { width: 29px; height: 30px; flex: none; }
+body .unified-header .site-nav {
+  gap: clamp(12px, 1.8vw, 28px);
+  font-family: Georgia, "Times New Roman", "WenKai", serif;
+}
+body .unified-header .site-nav a {
+  position: relative;
+  color: #f5ecd7;
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 10px 0;
+  min-height: 44px;
+  border: 0;
+}
+body .unified-header .site-nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 4px;
+  border-bottom: 1px solid #d8b56d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s;
+}
+body .unified-header .site-nav a:hover::after,
+body .unified-header .site-nav a:focus-visible::after,
+body .unified-header .site-nav a[aria-current]::after { transform: scaleX(1); }
+body .unified-header .site-nav a[aria-current] { color: #e9c887; }
+body .unified-header .site-nav a.lang-switch {
+  margin-left: 8px;
+  border-radius: 0;
+  font-size: .82rem;
+  letter-spacing: .06em;
+}
+.unified-header .theme-toggle { color: #f5ecd7; border-color: rgb(245 236 215 / .4); flex: none; }
+.site-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgb(245 236 215 / .4);
+  border-radius: 4px;
+  color: #f5ecd7;
+  cursor: pointer;
+}
+.site-menu-toggle svg { width: 26px; height: 24px; }
+.unified-header :focus-visible { outline: 2px solid #e9c887; outline-offset: 4px; }
+@media (max-width: 1000px) {
+  body .site-header.unified-header { height: 70px; }
+  .js .site-menu-toggle { display: inline-flex; margin-left: auto; }
+  body .unified-header .site-nav {
+    display: flex;
+    position: absolute;
+    inset: 70px 0 auto;
+    margin: 0;
+    padding: 18px 24px 24px;
+    gap: 12px 28px;
+    flex-wrap: wrap;
+    background: #071c2b;
+    border-bottom: 1px solid rgb(245 236 215 / .2);
+    max-height: calc(100svh - 70px);
+    overflow-y: auto;
+  }
+  .js body .unified-header .site-nav { display: none; }
+  .js body .unified-header.menu-open .site-nav { display: flex; }
+  body .unified-header .site-nav a.lang-switch { margin-left: 0; }
+  html:not(.js) .unified-header { margin-bottom: 130px; }
+}
+@media print { body .site-header.unified-header { display: none; } }

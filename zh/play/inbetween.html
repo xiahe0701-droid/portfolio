@@ -18,6 +18,7 @@
 </script>
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/play.css">
+<link rel="stylesheet" href="../../css/navigation.css">
 </head>
 <body>
 
@@ -57,19 +58,14 @@
 
 <a class="skip-link" href="#main">跳到正文</a>
 
-<header class="site-header">
+<header class="site-header unified-header">
   <div class="container">
-    <a class="back-link" href="../index.html#inbetween">
-      <svg aria-hidden="true"><use href="#i-arrow"/></svg>
-      返回作品集
-    </a>
-    <nav class="site-nav" aria-label="页面操作"><a href="../index.html">主页</a>
-      <a class="lang-switch" href="../../play/inbetween.html" lang="en" aria-label="Switch to English">EN</a>
-      <button class="theme-toggle" type="button" aria-label="切换深色 / 浅色主题">
+    <a class="brand" href="../index.html" aria-label="WELKIN · 首页"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 26 4 10l8 8 5-13 5 13 9-9-4 18Z M5 30l22-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>WELKIN</span></a>
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="打开导航"><svg viewBox="0 0 28 24" aria-hidden="true"><path d="M2 6h24M2 17h24" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+    <nav class="site-nav" id="site-navigation" aria-label="网站导航"><a href="../index.html">主页</a><a href="../index.html#selected-works" aria-current="location">作品</a><a href="../index.html#illustrations">画册</a><a href="../index.html#about">关于我</a><a href="../resume.html">简历</a><a class="lang-switch" href="../../play/inbetween.html" lang="en" aria-label="Switch to English">EN / 中文</a><button class="theme-toggle" type="button" aria-label="切换深色 / 浅色主题">
         <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
         <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
-      </button>
-    </nav>
+      </button></nav>
   </div>
 </header>
 
@@ -111,5 +107,6 @@
 
 <script src="../js/main.js" defer></script>
 <script src="../js/play.js?v=4" defer></script>
+<script src="../../js/navigation.js" defer></script>
 </body>
 </html>

@@ -18,6 +18,7 @@
 </script>
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/play.css">
+<link rel="stylesheet" href="../css/navigation.css">
 </head>
 <body>
 
@@ -57,19 +58,14 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header unified-header">
   <div class="container">
-    <a class="back-link" href="../index.html#spring">
-      <svg aria-hidden="true"><use href="#i-arrow"/></svg>
-      Back to the portfolio
-    </a>
-    <nav class="site-nav" aria-label="Page actions"><a href="../index.html">Home</a>
-      <a class="lang-switch" href="../zh/play/spring.html" lang="zh-CN" aria-label="切换到中文版">中文</a>
-      <button class="theme-toggle" type="button" aria-label="Switch between light and dark">
+    <a class="brand" href="../index.html" aria-label="WELKIN · Home"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 26 4 10l8 8 5-13 5 13 9-9-4 18Z M5 30l22-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>WELKIN</span></a>
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><svg viewBox="0 0 28 24" aria-hidden="true"><path d="M2 6h24M2 17h24" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../full-work.html" aria-current="location">Work</a><a href="../illustration.html">Illustration</a><a href="../about.html">About Me</a><a href="../resume.html">Résumé</a><a class="lang-switch" href="../zh/play/spring.html" lang="zh-CN" aria-label="切换到中文版">EN / 中文</a><button class="theme-toggle" type="button" aria-label="Switch between light and dark">
         <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
         <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
-      </button>
-    </nav>
+      </button></nav>
   </div>
 </header>
 
@@ -111,5 +107,6 @@
 
 <script src="../js/main.js" defer></script>
 <script src="../js/play.js?v=4" defer></script>
+<script src="../js/navigation.js" defer></script>
 </body>
 </html>
