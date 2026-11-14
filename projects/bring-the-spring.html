@@ -138,9 +138,15 @@
         <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
       </a>
 
-      <div class="gnome-box" aria-hidden="true">
-        <img id="gnome-sprite" src="../art/bring-the-spring/thumb/2547_idle_0001.png" alt="" width="360" height="270" loading="lazy">
-        <p class="gnome-bubble">Shake the tree — down comes the snow.</p>
+      <div class="tree-scene reveal">
+        <div class="gnome-box" aria-hidden="true">
+          <img id="gnome-sprite" src="../art/bring-the-spring/thumb/2547_idle_0001.png" alt="" width="360" height="270" loading="lazy">
+          <p class="gnome-bubble">Shake the tree — down comes the snow.</p>
+        </div>
+        <button class="tree-trigger" type="button" data-tree-animation="../assets/star-tree-shake-drop.webp" aria-label="Shake the tree and make the snow fall">
+          <img src="../assets/star-tree-still.webp" alt="" width="600" height="601" loading="lazy">
+          <span>Click the tree to shake it</span>
+        </button>
       </div>
 
       <div class="actions reveal">
@@ -176,4 +182,5 @@
 </dialog>
 <script src="../js/main.js" defer></script>
 <script src="../js/navigation.js" defer></script>
+<script src="../js/tree-animation.js" defer></script>
 </body></html>

@@ -852,12 +852,18 @@ main { position: relative; }
   gap: clamp(var(--s5), 4vw, var(--s7));
   align-items: center;
 }
+.tree-scene { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 3vw, 48px); margin-top: var(--s6); }
+.tree-trigger { flex: 0 0 clamp(180px, 25vw, 300px); display: grid; justify-items: center; border: 0; padding: 0; color: #5B5442; background: none; font: inherit; font-size: var(--t-meta); cursor: pointer; }
+.tree-trigger img { display: block; width: 100%; height: auto; }
+.tree-trigger:hover img { transform: translateY(-3px); }
+.tree-trigger:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+@media (max-width: 640px) { .tree-scene { flex-direction: column; gap: 0; } .tree-trigger { flex-basis: auto; width: min(70vw, 260px); } }
 .gnome-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0;
-  margin-top: var(--s6);
+  margin-top: 0;
 }
 .gnome-box img { height: 200px; width: auto; }
 .gnome-bubble {
