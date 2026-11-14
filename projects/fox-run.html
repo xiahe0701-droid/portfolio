@@ -4,7 +4,7 @@
 <title>Fox Run · Yunxi Wang</title>
 <meta name="description" content="Set the engine aside and face the hardware of 1998: a complete, playable Game Boy Color game written in assembly. A fox runs across the snowfield, jumps, and opens its mouth to catch what the road brings. The whole ROM is 436 KB, the emulator lives right in the page, and clicking is playing.">
 <link rel="icon" href="../assets/favicon.png"><link rel="alternate" hreflang="zh-Hans" href="../zh/projects/fox-run.html?v=20261114-project-order-2">
-<link rel="stylesheet" href="../css/main.css?v=20261114-diptych-2"><link rel="stylesheet" href="../css/projects.css?v=20261114-image-style-2">
+<link rel="stylesheet" href="../css/main.css?v=20261114-diptych-2"><link rel="stylesheet" href="../css/projects.css?v=20261114-gameboy-play">
 <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('xh-theme');document.documentElement.setAttribute('data-theme',t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}</script>
 <link rel="stylesheet" href="../css/navigation.css?v=20261114-header-layout-2">
 </head><body class="project-page" id="top">
@@ -100,7 +100,7 @@
     </header>
 
     <div class="chapter-body">
-      <div class="gb-shell reveal" aria-hidden="true">
+      <a class="gb-shell gb-play-link reveal" href="../play/foxrun.html" aria-label="Play Fox Run">
         <div class="gb-screen-bezel">
           <p class="gb-bezel-label">FOX RUN · COLOR</p>
           <div class="gb-screen">
@@ -111,12 +111,8 @@
           <svg class="gb-dpad" aria-hidden="true"><use href="#i-dpad"/></svg>
           <div class="gb-ab"><span>B</span><span>A</span></div>
         </div>
-      </div>
-      <ul class="controls-list">
-        <li><kbd>Enter</kbd> Start</li>
-        <li><kbd>↑</kbd> Jump</li>
-        <li><kbd>S</kbd> Bite</li>
-      </ul>
+      </a>
+      <p class="gb-play-hint">Click to play</p>
 
       <div class="facts reveal">
         <div class="facts-grid">
@@ -129,13 +125,6 @@
           <li>Assembled the fox from 20 sprite tiles, with macros to batch-sync their coordinate updates</li>
           <li>Studied the GBC's expanded memory architecture and palette system to pull color out of 1998 hardware</li>
         </ul>
-      </div>
-
-      <div class="actions reveal">
-        <a class="btn primary" href="../play/foxrun.html">
-          <svg aria-hidden="true"><use href="#i-play"/></svg>
-          Open Fox Run and play
-        </a>
       </div>
     </div>
   </article></main>

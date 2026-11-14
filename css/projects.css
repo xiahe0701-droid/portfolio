@@ -16,6 +16,9 @@
 .project-article .spring-garland { display: none; }
 .project-article .video-frame { margin-top: 50px; }
 .project-article .facts { max-width: 54rem; }
+.project-page .gb-play-link { display: block; color: inherit; text-decoration: none; cursor: pointer; }
+.project-page .gb-play-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
+.project-page .gb-play-hint { margin: 20px auto 0; text-align: center; color: var(--ink-soft); font-size: var(--t-meta); }
 .project-page .shot {
   appearance: none;
   border: 0;

@@ -4,7 +4,7 @@
 <title>Fox Run · Yunxi Wang</title>
 <meta name="description" content="放下引擎，直接面对 1998 年的硬件：用汇编为 Game Boy Color 写一个完整可玩的游戏——狐狸在雪原上奔跑、跳跃、张嘴去接路上的东西。整个 ROM 只有 436 KB，页面内嵌模拟器，点开就是玩。">
 <link rel="icon" href="../assets/favicon.png"><link rel="alternate" hreflang="en" href="../../projects/fox-run.html?v=20261114-project-order-2">
-<link rel="stylesheet" href="../css/main.css?v=20261114-diptych-2"><link rel="stylesheet" href="../../css/projects.css?v=20261114-image-style-2">
+<link rel="stylesheet" href="../css/main.css?v=20261114-diptych-2"><link rel="stylesheet" href="../../css/projects.css?v=20261114-gameboy-play">
 <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('xh-theme');document.documentElement.setAttribute('data-theme',t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}</script>
 <link rel="stylesheet" href="../../css/navigation.css?v=20261114-header-layout-2">
 </head><body class="project-page" id="top">
@@ -100,7 +100,7 @@
     </header>
 
     <div class="chapter-body">
-      <div class="gb-shell reveal" aria-hidden="true">
+      <a class="gb-shell gb-play-link reveal" href="../play/foxrun.html" aria-label="试玩 Fox Run">
         <div class="gb-screen-bezel">
           <p class="gb-bezel-label">FOX RUN · COLOR</p>
           <div class="gb-screen">
@@ -111,12 +111,8 @@
           <svg class="gb-dpad" aria-hidden="true"><use href="#i-dpad"/></svg>
           <div class="gb-ab"><span>B</span><span>A</span></div>
         </div>
-      </div>
-      <ul class="controls-list">
-        <li><kbd>Enter</kbd> 开始</li>
-        <li><kbd>↑</kbd> 跳跃</li>
-        <li><kbd>S</kbd> 张嘴</li>
-      </ul>
+      </a>
+      <p class="gb-play-hint">Click to play</p>
 
       <div class="facts reveal">
         <div class="facts-grid">
@@ -129,13 +125,6 @@
           <li>狐狸角色由 20 个精灵块拼成，编写宏批量同步坐标变化</li>
           <li>研究 GBC 的扩展内存架构与调色板系统，让老硬件跑出彩色画面</li>
         </ul>
-      </div>
-
-      <div class="actions reveal">
-        <a class="btn primary" href="../play/foxrun.html">
-          <svg aria-hidden="true"><use href="#i-play"/></svg>
-          点开就能玩 Fox Run
-        </a>
       </div>
     </div>
   </article></main>
