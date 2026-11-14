@@ -33,11 +33,6 @@
   box-shadow: var(--shadow-lg);
 }
 .project-page .shot:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
-@media (prefers-reduced-motion: reduce) {
-  .project-page .shot .mat { transition: none; }
-  .project-page .shot:hover .mat,
-  .project-page .shot:focus-visible .mat { transform: none; }
-}
 .project-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1096px; margin: 0 auto; padding: 38px 0 70px; border-top: 1px solid var(--line); }
 .project-pagination a { text-decoration: none; display: block; }
 .project-pagination a:last-child { text-align: right; }

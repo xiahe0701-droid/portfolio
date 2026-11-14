@@ -134,9 +134,9 @@ html[lang="en"] .cover-title { font-size: clamp(106px, 9.7vw, 170px); line-heigh
   background: url('../assets/forest-decor/painted-project-divider.png') center / contain no-repeat;
 }
 .painted-divider.to-spring { --divider-to: #efe7d5; }
-.painted-divider.to-fox { --divider-from: #efe7d5; --divider-to: #f5edda; }
+.painted-divider.to-fox { --divider-from: var(--paper); --divider-to: #f5edda; }
 .painted-divider.to-fox::after { transform: scaleX(-1); }
-.painted-divider.to-enlighten { --divider-from: #f5edda; --divider-to: #182e35; }
+.painted-divider.to-enlighten { --divider-from: #efe7d5; --divider-to: #182e35; }
 .painted-divider.to-sketchbook { --divider-from: #182e35; }
 .painted-divider.to-sketchbook::after { transform: scaleX(-1); }
 .spread-enlighten {
@@ -152,7 +152,7 @@ html[lang="en"] .cover-title { font-size: clamp(106px, 9.7vw, 170px); line-heigh
 .spread-enlighten .spread-kicker { color: #7e725a; }
 .spread-enlighten .folio > span { background: var(--paper); }
 .painted-divider.to-enlighten { --divider-to: var(--paper); }
-.painted-divider.to-sketchbook { --divider-from: var(--paper); --divider-to: #071c2b; }
+.painted-divider.to-sketchbook { --divider-from: #f5edda; --divider-to: #071c2b; }
 .home-destinations {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
